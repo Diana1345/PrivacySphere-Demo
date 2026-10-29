@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PrivacySphere — suită de conformitate GDPR și Legea 195/2024." />
+    <title>PrivacySphere | Compliance Suite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">P</div>
+          <div><strong>PrivacySphere</strong><span>Legea 195/2024 Compliance Suite</span></div>
+        </div>
+        <div class="workspace"><span class="avatar">AC</span><div><b>Alfa Consulting SRL</b><small>Organizație activă</small></div><span class="chevron">⌄</span></div>
+        <nav id="nav" aria-label="Navigare principală">
+          <p class="nav-label">WORKSPACE</p>
+          <button class="nav-item active" data-tab="overview"><span>◈</span> Prezentare generală</button>
+          <button class="nav-item" data-tab="ropa"><span>▤</span> Registrul ROPA <em>12</em></button>
+          <button class="nav-item" data-tab="audit"><span>⌁</span> Jurnal acces & audit</button>
+          <button class="nav-item" data-tab="incidents"><span>△</span> Incidente de securitate <em class="danger">2</em></button>
+          <button class="nav-item" data-tab="dsar"><span>◎</span> Cereri DSAR <em>4</em></button>
+          <p class="nav-label">ADMINISTRARE</p>
+          <button class="nav-item" data-tab="settings"><span>⚙</span> Setări companie</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="help-card"><span>?</span><div><b>Ai nevoie de ajutor?</b><small>Consultă ghidul de utilizare</small></div></div>
+          <div class="user-card"><span class="avatar">MI</span><div><b>Maria Ionescu</b><small>DPO · Administrator</small></div><button id="logout" title="Deconectare">↪</button></div>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar"><div class="breadcrumbs">PrivacySphere <span>/</span> <b id="crumb">Prezentare generală</b></div><div class="top-actions"><span class="live"><i></i> Sincronizat</span><button class="icon-btn">⌕</button><button class="icon-btn notify">♢<i></i></button><button class="top-avatar">MI</button></div></header>
+        <div id="content"></div>
+      </main>
+    </div>
+    <div id="modal-root"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
